@@ -23,11 +23,10 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  height: 100vh;
-  padding: 3em 1em;
+  padding: 2em 1em 0;
   &-card {
     text-align: justify;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     border-radius: 2em;
     padding: 1em;
     &:last-child {
@@ -49,6 +48,7 @@ body {
       background-color: white;
       border-radius: 1em;
       padding: 1em;
+
       p {
         color: $Dark-Blue;
         font-size: 0.9em;
@@ -57,6 +57,19 @@ body {
       .firma {
         font-style: italic;
         text-align: right;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        margin-bottom: 0.5em;
+        font-size: 0.8em;
+        margin-left: 10px;
+      }
+      h3 {
+        font-weight: 800;
+        font-size: 1em;
+        margin-bottom: 10px;
       }
     }
   }
