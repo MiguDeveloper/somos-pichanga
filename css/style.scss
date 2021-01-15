@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 $Very-Dark-Blue: hsl(234, 12%, 34%);
 $Grayish-Blue: hsl(229, 6%, 66%);
@@ -29,6 +30,7 @@ body {
     margin-bottom: 0.5em;
     border-radius: 2em;
     padding: 1em;
+    height: 100vh;
     &:last-child {
       margin-bottom: 0;
     }
@@ -48,9 +50,12 @@ body {
       background-color: white;
       border-radius: 1em;
       padding: 1em;
-
+      &.acuerdos {
+        background-color: #16c79a;
+        font-family: 'Ubuntu', sans-serif;
+        color: #19456b;
+      }
       p {
-        color: $Dark-Blue;
         font-size: 0.9em;
         margin-bottom: 1em;
       }
@@ -62,8 +67,8 @@ body {
         list-style: none;
       }
       li {
+        font-size: 0.9em;
         margin-bottom: 0.5em;
-        font-size: 0.8em;
         margin-left: 10px;
       }
       h3 {

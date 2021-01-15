@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
 *,
 ::after,
 ::before {
@@ -25,6 +26,7 @@ body {
   margin-bottom: 0.5em;
   border-radius: 2em;
   padding: 1em;
+  height: 100vh;
 }
 .cards-card:last-child {
   margin-bottom: 0;
@@ -46,8 +48,12 @@ body {
   border-radius: 1em;
   padding: 1em;
 }
+.cards-card-mensaje.acuerdos {
+  background-color: #16c79a;
+  font-family: "Ubuntu", sans-serif;
+  color: #19456b;
+}
 .cards-card-mensaje p {
-  color: #3e3c49;
   font-size: 0.9em;
   margin-bottom: 1em;
 }
@@ -59,8 +65,8 @@ body {
   list-style: none;
 }
 .cards-card-mensaje li {
+  font-size: 0.9em;
   margin-bottom: 0.5em;
-  font-size: 0.8em;
   margin-left: 10px;
 }
 .cards-card-mensaje h3 {
