@@ -21,16 +21,20 @@ body {
 }
 
 .cards {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  padding: 2em 1em 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  //padding: 2em 1em 0;
+  //justify-content: center;
   &-card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     text-align: justify;
     margin-bottom: 0.5em;
     border-radius: 2em;
     padding: 1em;
-    height: 100vh;
     &:last-child {
       margin-bottom: 0;
     }
@@ -38,12 +42,15 @@ body {
       font-size: 1em;
       text-align: right;
       color: $Dark-Blue;
+      width: 100%;
     }
     &-title {
       font-size: 1.9em;
       font-weight: 600;
       text-align: center;
       font-family: 'Poppins', sans-serif;
+      margin-bottom: 0.5em;
+      padding: 0 11px;
     }
     &-mensaje {
       font-size: 1.5em;
